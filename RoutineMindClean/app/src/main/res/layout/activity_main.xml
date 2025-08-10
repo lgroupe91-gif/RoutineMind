@@ -1,0 +1,46 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+  <LinearLayout android:orientation="vertical" android:padding="16dp"
+      android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/txt_quote" android:text="Citation"
+        android:textSize="18sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Space android:layout_width="1dp" android:layout_height="12dp"/>
+
+    <EditText android:id="@+id/et_name" android:hint="Nom de la routine"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/et_time" android:hint="Heure (ex: 07:00)"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Spinner android:id="@+id/sp_cat" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/et_task" android:hint="Ajouter une tâche"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_add_task" android:text="Ajouter tâche"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/txt_tasks" android:text="" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btn_save" android:text="Enregistrer la routine"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Space android:layout_width="1dp" android:layout_height="12dp"/>
+
+    <TextView android:text="Mes routines" android:textStyle="bold"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <Space android:layout_width="1dp" android:layout_height="12dp"/>
+
+    <TextView android:text="Musique Motivation" android:textStyle="bold"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+      <Button android:id="@+id/btn_music" android:text="Lancer"
+          android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+      <Button android:id="@+id/btn_pick" android:text="Choisir"
+          android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+
+  </LinearLayout>
+</ScrollView>
